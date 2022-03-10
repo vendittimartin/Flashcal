@@ -1,0 +1,20 @@
+programa factorial;
+variables a,i,n;
+cuerpo
+"Ingrese n: ":leer(n);
+si n=0
+{
+"El numero es: ":escribir(1);
+}
+sino
+{
+a==1;
+i==1;
+mientras i<=n
+{
+a==i*a;
+i==i+1;
+};
+"El numero es: ":escribir(a); 
+};
+fin;

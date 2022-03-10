@@ -1,0 +1,17 @@
+programa sucesiondefibonacci;
+variables a,b,c,i,n;
+cuerpo
+a==0;
+b==1;
+c==1;
+i==0;
+"Ingrese n: ": leer(n);
+mientras i<n
+{ 
+c==a+b;
+a==b;
+b==c;
+i==i+1;
+};
+"El numero es igual a: ": escribir(c);
+fin;

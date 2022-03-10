@@ -1,0 +1,91 @@
+programa mcm;
+variables a,b,c,d,e,temp;
+cuerpo
+"Ingrese el primer numero: ": leer(a);
+"Ingrese el segundo numero: ": leer(b);
+d==0;                                      
+si [a>0] 
+{ mientras [no a<1]
+  { a==a-1;
+    d==d+1;
+  };
+}
+sino
+{ si [a<0] 
+  { mientras [no a>-1] 
+    { a==a+1;
+      d==d-1;
+    };
+  }
+  sino
+  { d==0;
+  };
+};
+a==d;                                 
+d==0;                                
+si [b>0] 
+{ mientras [no b<1]
+  { b==b-1;
+    d==d+1;
+  };
+}
+sino
+{ si [b<0] 
+  { mientras [no b>-1] 
+    { b==b+1;
+      d==d-1;
+    };
+  }
+  sino
+  { d==0;
+  };
+};
+b==d;                             
+e==a*b; 
+mientras a>0
+{ temp==a;
+  c==b/a;
+  d==0;                               
+  si [c>0] 
+  { mientras [no c<1]
+    { c==c-1;
+      d==d+1;
+    };
+  }
+  sino
+  { si [c<0] 
+    { mientras [no c>-1] 
+      { c==c+1;
+        d==d-1;
+      };
+    }
+    sino
+    { d==0;
+    };
+  };
+  c==d;                            
+  a==b-a*c;
+  b==temp;
+};
+c==e/b;
+  d==0;                            
+  si [c>0] 
+  { mientras [no c<1]
+    { c==c-1;
+      d==d+1;
+    };
+  }
+  sino
+  { si [c<0] 
+    { mientras [no c>-1] 
+      { c==c+1;
+        d==d-1;
+      };
+    }
+    sino
+    { d==0;
+    };
+  };
+c==d;                             
+"El Resultado es: ": escribir(c);
+fin;

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectOptions>
+    <Version Value="11"/>
+    <PathDelim Value="\"/>
+    <General>
+      <Flags>
+        <MainUnitHasCreateFormStatements Value="False"/>
+        <MainUnitHasTitleStatement Value="False"/>
+        <MainUnitHasScaledStatement Value="False"/>
+      </Flags>
+      <SessionStorage Value="InProjectDir"/>
+      <MainUnit Value="0"/>
+      <Title Value="Proyecto_interprete"/>
+      <UseAppBundle Value="False"/>
+      <ResourceType Value="res"/>
+    </General>
+    <BuildModes Count="1">
+      <Item1 Name="Default" Default="True"/>
+    </BuildModes>
+    <PublishOptions>
+      <Version Value="2"/>
+      <UseFileFilters Value="True"/>
+    </PublishOptions>
+    <RunParams>
+      <FormatVersion Value="2"/>
+      <Modes Count="0"/>
+    </RunParams>
+    <Units Count="8">
+      <Unit0>
+        <Filename Value="Proyecto_interprete.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit0>
+      <Unit1>
+        <Filename Value="analizador_lexico.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="Analizador_lexico"/>
+      </Unit1>
+      <Unit2>
+        <Filename Value="tas.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="TAS"/>
+      </Unit2>
+      <Unit3>
+        <Filename Value="pantalla.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="Pantalla"/>
+      </Unit3>
+      <Unit4>
+        <Filename Value="pila.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="Pila"/>
+      </Unit4>
+      <Unit5>
+        <Filename Value="analizador_sintactico.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit5>
+      <Unit6>
+        <Filename Value="tipos.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="Tipos"/>
+      </Unit6>
+      <Unit7>
+        <Filename Value="arboles.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="Arboles"/>
+      </Unit7>
+    </Units>
+  </ProjectOptions>
+  <CompilerOptions>
+    <Version Value="11"/>
+    <PathDelim Value="\"/>
+    <Target>
+      <Filename Value="Proyecto_interprete"/>
+    </Target>
+    <SearchPaths>
+      <IncludeFiles Value="$(ProjOutDir)"/>
+      <UnitOutputDirectory Value="lib\$(TargetCPU)-$(TargetOS)"/>
+    </SearchPaths>
+  </CompilerOptions>
+  <Debugging>
+    <Exceptions Count="3">
+      <Item1>
+        <Name Value="EAbort"/>
+      </Item1>
+      <Item2>
+        <Name Value="ECodetoolError"/>
+      </Item2>
+      <Item3>
+        <Name Value="EFOpenError"/>
+      </Item3>
+    </Exceptions>
+  </Debugging>
+</CONFIG>
