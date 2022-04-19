@@ -1,16 +1,16 @@
-# Flashcal
+# Flashcal 🚀
 Final project of syntax and semantics of languages. Development of a new programming language.
 
-# Manual de uso
+# Manual de uso 📖
 https://drive.google.com/file/d/1-At6EtAK8By7vXH4KvlH_IH8-01d0r3O/view?usp=sharing
 
-# Tabla de analizador sintáctico
+# Tabla de analizador sintáctico ⚙️
 https://docs.google.com/spreadsheets/d/1M_WKtZ9H_bf8yUl9GdjUOgki-3VBqD3J/edit?usp=sharing&ouid=112285760863009081068&rtpof=true&sd=true
 
-# Autómatas
+# Autómatas ⚙️
 https://drive.google.com/drive/folders/1e2Myju0pC_Azjvomz43p5peAFZgzxQjQ?usp=sharing
 
-# Gramática Independiente del Contexto inicial
+# Gramática Independiente del Contexto inicial ⚙️
 Program →  Programa id ;   Variable ;   Body ;
 Variable → variables var 
 Var → idK | ɛ
@@ -27,7 +27,7 @@ exparit →  constreal | id | exparit + exparit | exparit - exparit | exparit * 
 cond → exparit oprel exparit I cond oplog cond | no cond | [cond]
 oplog → or I and
 
-# Gramática Independiente del Contexto LL(1)
+# Gramática Independiente del Contexto LL(1) ⚙️
 Program →  programa id ;   Variable ;   Body ;
 Variable → variables Var
 Var → idK | ɛ
@@ -60,7 +60,7 @@ V →  no R | R
 I → and V | ɛ
 R → Exparit oprel Exparit | [Cond]
 
-# Gramática Independiente del Contexto en la forma Backus-Naur
+# Gramática Independiente del Contexto en la forma Backus-Naur ⚙️
 <Program>::= “programa” “id” ” ;”   <Variable> “;”  < Body>”;”
 <Variable> ::= “variables” <Var>
 <Var> ::= “id”<K> | ɛ
@@ -93,7 +93,7 @@ R → Exparit oprel Exparit | [Cond]
 <I> ::= “and” <V> | ɛ
 <R> ::= <Exparit> “oprel” <Exparit> | “[“<Cond>”]”
 
-# Semántica de nuestro lenguaje
+**# Semántica de nuestro lenguaje** ⚙️
 Program -> programa id ;   Variable ;   Body ;
 EvaluarPrograma(Arbol, Estado)
 EstadoAgregarVariable(Estado, Arbol.Hijos(2).Lexema) 
